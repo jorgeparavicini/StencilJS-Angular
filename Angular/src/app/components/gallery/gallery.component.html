@@ -1,0 +1,6 @@
+<div *ngIf="gallery" class="page__content">
+  <div *ngFor="let entry of gallery" class="entry">
+    <img [src]="entry.imageUrl" />
+    <p>{{ entry.imageDescription }}</p>
+  </div>
+</div>
