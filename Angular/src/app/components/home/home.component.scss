@@ -1,0 +1,12 @@
+.page__content {
+  max-width: 600px;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+.text {
+  text-align: justify;
+}
