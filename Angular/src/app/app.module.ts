@@ -5,14 +5,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { StaticHeaderComponent } from './components/static-header/static-header.component';
 import { HomeComponent } from './components/home/home.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'gallery', component: GalleryComponent },
   { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
-  declarations: [AppComponent, StaticHeaderComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    StaticHeaderComponent,
+    HomeComponent,
+    GalleryComponent,
+  ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
