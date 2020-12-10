@@ -20,11 +20,8 @@ const routes: Routes = [
     StaticHeaderComponent,
     HomeComponent,
     GalleryComponent,
-    HttpClientModule
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
-  providers: [],
+  imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule],
   bootstrap: [AppComponent],
-  exports: [RouterModule],
 })
 export class AppModule {}
