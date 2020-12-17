@@ -1,14 +1,11 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { defineCustomElements } from 'default-component';
-
 import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { startTimer } from './timer';
 
-if (environment.production) {
-  enableProdMode();
-}
-
+startTimer();
+enableProdMode();
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .catch((err) => console.error(err));
