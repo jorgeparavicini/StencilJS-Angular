@@ -1,10 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { StaticHeaderComponent } from './components/static-header/static-header.component';
 import { HomeComponent } from './components/home/home.component';
+import { StaticHeaderComponent } from './components/static-header/static-header.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
