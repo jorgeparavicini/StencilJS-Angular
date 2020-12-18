@@ -7,8 +7,6 @@ import { getStartTime } from 'src/timer';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'StencilJS';
-
   public getStartTime(): number {
     return getStartTime();
   }
